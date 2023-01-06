@@ -7,8 +7,11 @@
  * 
  * @example "racecar" -> true
 */
-function problem(str) {
-    return null;
+function problem(str) {  
+    str = str.toLowerCase().replaceAll(' ', '');
+    let rev_str = str.split('').reverse().join('')
+ 
+    return str === rev_str;
 }
 
 const tests = [
